@@ -1,0 +1,72 @@
+.contact {
+	padding: 3em 0;
+	background-color: $color4;
+	text-align: center;
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__info-container {
+
+	}
+	&__info {
+		padding: 1em 0;
+		margin-bottom: 1.5em;
+	}
+	&__header {
+		border-bottom: 2px solid $color1;
+		margin-bottom: 2em;
+	}
+	&__header-title {
+		text-transform: uppercase;
+		color: $color2;
+		font-weight: $medium;
+	}
+	&__address,
+	&__item-schedule,
+	&__book-copy {
+		font-size: 1.2em;
+		font-weight: $light;
+		line-height: 1.5;
+		color: $color2;
+	}
+	//Schedules
+	&__list-container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__list-schedule {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	&__item-schedule {
+		line-height: 2;
+	}
+	//Reservation block
+	&__book {
+		margin-top: 4em;
+	}
+	&__book-copy {
+		font-weight: $normal;
+	}
+	&__book-link {
+		font-weight: $medium;
+		color: $color2;
+		text-decoration: none;
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+
+		&:before {
+			content: " ";
+			width: 100%;
+			height: 2px;
+			background-color: $color2;
+			position: absolute;
+			bottom: -.1em;
+			left: 0;
+		}
+	}
+}

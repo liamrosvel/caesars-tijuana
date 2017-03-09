@@ -4,7 +4,41 @@
 	box-sizing: border-box;
 }
 
+//Color Variables
+$color1: #d9cca0;
+$color2: #303030;
+$color3: #F1EBDA;
+$color4: #F5F4ED;
+$color5: #E5E3D6;
+$color6: #69410F;
+
+//Font-family
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+//Font-weight
+$light: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+
+//General Styles
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+
 video,
 img {
 	max-width: 100%;
 }
+
+//partials
+
+@import "partials/header";
+@import "partials/main-menu";
+@import "partials/landing";
+@import "partials/menu";
+@import "partials/salad";
+@import "partials/family";
+@import "partials/contact";
+@import "partials/footer";

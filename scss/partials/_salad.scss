@@ -1,0 +1,60 @@
+.salad {
+	padding: 4em 0;
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__img-container {
+		margin: 0;
+		padding: 0;
+	}
+	//header styles
+	&__copy-header {
+		margin-top: 2em;
+		text-align: center;
+		border-bottom: 2px solid $color2;
+	}
+	&__copy-icon {
+		fill: $color1;
+		width: 3em;
+		height: 3em;
+	}
+	&__copy-title {
+		margin-top: 0;
+		color: $color2;
+		font-weight: $normal;
+		font-size: 1.9em;
+		line-height: 1.4;
+	}
+	//copy styles
+	&__copy-container {
+		text-align: center;
+		padding-top: 2em;
+		margin-bottom: 2em;
+	}
+	&__copy {
+		color: $color2;
+		font-weight: $light;
+		font-size: 1.4em;
+		line-height: 1.6;
+	}
+	//button styles
+	&__copy-button {
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: $normal;
+		color: $color2;
+		font-size: 1.2em;
+		display: inline-block;
+		line-height: 3.5;
+		padding: 0 2em;
+		border: 2px solid $color2;
+		margin-top: 2em;
+		transition: all 250ms ease-in;
+
+		&:hover {
+			transform: scale(.95);
+		}
+	}
+}

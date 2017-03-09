@@ -1,0 +1,42 @@
+.footer {
+	background-color: $color5;
+	padding: 3em 0 2em;
+	text-align: center;
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__title-social {
+		font-weight: $normal;
+		font-size: 1.2em;
+		text-transform: uppercase;
+	}
+	&__social-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	&__social-item {
+		display: inline-block;
+	}
+	&__social-icon {
+		width: 3em;
+		height: 3em;
+		fill: $color6;
+		transition: all 250ms ease-in;
+		&:hover {
+			fill: $color2;
+		}
+	}
+	&__social-icon-style {
+		margin-right: 3em;
+	}
+	&__copyright {
+		margin-top: 2em;
+		font-weight: $normal;
+		color: $color2;
+		line-height: 1.6;
+		font-size: .9em;
+	}
+}

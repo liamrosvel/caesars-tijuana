@@ -1,0 +1,46 @@
+.header {
+	background-color: $color2;
+	padding: 1em 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 600;
+
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	&__icons-container {
+		@media screen and (max-width: 1023px) {
+			display: flex; 
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	&__menu-icon {
+		fill: $color1;
+		width: 2.5em;
+		height: 2.5em;
+		cursor: pointer;
+	}
+	&__logo-container {
+		margin: 0;
+		padding: 0;
+		width: 10em;
+	}
+	&__logo {
+
+	}
+	&__opt-lenguage {
+		color: $color1;
+		text-transform: uppercase;
+		font-size: 1.9em;
+		font-weight: $light;
+		cursor: pointer;
+		transition: all 200ms ease-in;
+		&:hover {
+			color: $color4;
+		}
+	}
+}

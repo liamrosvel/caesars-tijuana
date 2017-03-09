@@ -1,0 +1,112 @@
+.landing {
+	margin-top: 5em;
+	padding: 2em 0;
+	position: relative;
+
+	@media screen and (max-width: 1023px) {
+		background: url(../assets/landing-small.jpg) 50% 50% / cover no-repeat;
+	}
+	
+	&__container {
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	//video styles
+	&__video {
+
+		@media screen and (max-width: 1023px) {
+			display: none;
+		}
+	}
+	&__copy-container {
+		padding: 1em 0 6em;
+	}
+	&__copy-title {
+		color: $color4;
+		font-weight: $normal;
+		font-size: 2.7em;
+		line-height: 1.4;
+		margin-top: 0;
+		text-shadow: .5px 1px 3px rgba($color2, .4);
+	}
+	&__copy-title-style {
+		font-size: 3.5rem;
+		font-weight: $medium;
+	}
+	&__copy-button {
+		display: block;
+		line-height: 3.2;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $color4;
+		font-weight: $normal;
+		font-size: 1.2rem;
+		border: 1px solid $color4;
+		background-color: rgba(#fff, .15);
+		transition: all 250ms ease-in;
+		&:hover {
+			background-color: transparent;
+		}
+	}
+	//banner book
+	&__book {
+		background-color: $color2;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		padding: 1.5em 0;
+	}
+	&__btn-book {
+		display: inline-block;
+		line-height: 3;
+		color: $color1;
+		text-decoration: none;
+		text-transform: uppercase;
+		position: relative;
+
+		@media screen and (max-width: 1023px) {
+			border: 1px solid $color1;
+			padding: 0 1.5em;
+			transition: all 250ms ease-in;
+			&:hover {
+				transform: scale(.95);
+			}	
+		}
+
+		@media screen and (min-width: 1024px) {
+			line-height: 2;
+
+			&:before {
+				content: " ";
+				display: inline-block;
+				width: 0;
+				height: 1px;
+				background-color: $color1;
+				position: absolute;
+				left: 0;
+				top: -.5em;
+				transition: all 250ms ease-in;
+			}
+			&:after {
+				content: " ";
+				display: inline-block;
+				width: 0;
+				height: 1px;
+				background-color: $color1;
+				position: absolute;
+				right: 0;
+				bottom: -.5em;
+				transition: all 250ms ease-in;
+			}
+			&:hover:before {
+				width: 100%;
+			}
+			&:hover:after {
+				width: 100%;
+			}
+		}
+	}
+}

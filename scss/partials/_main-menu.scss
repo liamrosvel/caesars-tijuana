@@ -1,0 +1,96 @@
+.main-menu {
+	text-align: center;
+	max-height: 0;
+	overflow: hidden;
+
+	&.show-menu {
+		max-height: 25rem;
+	}
+
+	//Menu styles
+	&__list,
+	&__social-list {
+		list-style: none;
+		margin: 0;
+		padding: 1em 0;
+	}
+	&__item {
+		margin: 2em 0;
+	}
+	&__link {
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: $light;
+		color: $color4;
+		font-size: 1.1em;
+		line-height: 2;
+		position: relative;
+
+		&:before {
+			content: " ";
+			display: inline-block;
+			width: 0;
+			height: 1px;
+			background-color: $color1;
+			position: absolute;
+			top: -.6em;
+			right: 0;
+			transition: all 250ms ease-in;
+		}
+		&:after {
+			content: " ";
+			display: inline-block;
+			width: 0;
+			height: 1px;
+			background-color: $color1;
+			position: absolute;
+			bottom: -.6em;
+			left: 0;
+			transition: all 250ms ease-in;
+		}
+		&:hover:before {
+			width: 100%;
+		}
+		&:hover:after {
+			width: 100%;
+		}
+	}
+	//Social menu styles
+	&__social-list {
+		padding: 0 0 2em;
+	}
+	&__social-item {
+		display: inline-block;
+	}
+	&__social-icon {
+		fill: $color1;
+		width: 2.5em;
+		height: 2.5em;
+		cursor: pointer;
+		transition: all 200ms ease-in;
+		&:hover {
+			fill: $color4;
+		}
+	}
+	&__social-icon-style {
+		margin-right: 3em;
+	}
+	//contact styles
+	&__address,
+	&__phone {
+		font-weight: $light;
+		font-size: .9em; 
+
+		@media screen and (max-width: 1023px) {
+			display: none;
+		}
+	}
+	&__address {
+		color: $color4;
+		line-height: 1.8;
+	}
+	&__phone {
+		color: $color1;
+		letter-spacing: 3px;
+	}
+}
