@@ -5,6 +5,10 @@
 	&__container {
 		width: 90%;
 		margin: 0 auto;
+
+		@media screen and (min-width: 1024px) {
+			width: 87%;
+		}
 	}
 	//header styles
 	&__header {
@@ -38,6 +42,10 @@
 	//items styles
 	&__items-container {
 
+		@media screen and (min-width: 768px) {
+			display: flex;
+			flex-wrap: wrap;
+		}
 	}
 	//items bg
 	&__item {
@@ -57,6 +65,10 @@
 			color: $color1;
 			border-top: 3px solid $color1;
 			border-bottom: 3px solid $color1;
+		}
+
+		@media screen and (min-width: 768px) {
+			width: 50%;
 		}
 	}
 	&__item-saucer {

@@ -4,10 +4,15 @@
 	&__container {
 		width: 90%;
 		margin: 0 auto;
+
+		@media screen and (min-width: 1024px) {
+			width: 87%;
+		}
 	}
 	&__img-container {
 		margin: 0;
 		padding: 0;
+		text-align: center;
 	}
 	//header styles
 	&__copy-header {
