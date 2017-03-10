@@ -21,6 +21,10 @@
 		@media screen and (min-width: 1024px) {
 			width: 87%;
 		}
+
+		@media screen and (min-width: 1200px) {
+            width: 1110px; 
+        }
 	}
 	//video styles
 	&__video {
@@ -28,12 +32,30 @@
 		@media screen and (max-width: 1023px) {
 			display: none;
 		}
+
+		@media screen and (min-width: 1024px) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -100;
+			min-width: 100%;
+			min-height: 100%;
+		}
 	}
 	&__copy-container {
 		padding: 1em 0 5em;
 
 		@media screen and (min-width: 480px) {
 			padding: 4em 2em 12em;
+		}
+
+		@media screen and (min-width: 1024px) {
+			width: 55%;
+			margin: 0 auto;
+		}
+
+		@media screen and (min-width: 1200px) {
+			padding: 6em 2em 14em;
 		}
 	}
 	&__copy-title {
@@ -43,6 +65,10 @@
 		line-height: 1.4;
 		margin-top: 0;
 		text-shadow: .5px 1px 3px rgba($color2, .4);
+
+		@media screen and (min-width: 1200px) {
+			font-size: 3.5em;
+		}
 	}
 	&__copy-title-style {
 		font-size: 3.5rem;
@@ -84,48 +110,11 @@
 		color: $color1;
 		text-decoration: none;
 		text-transform: uppercase;
-		position: relative;
-
-		@media screen and (max-width: 1023px) {
-			border: 1px solid $color1;
-			padding: 0 1.5em;
-			transition: all 250ms ease-in;
-			&:hover {
-				transform: scale(.95);
-			}	
-		}
-
-		@media screen and (min-width: 1024px) {
-			line-height: 2;
-
-			&:before {
-				content: " ";
-				display: inline-block;
-				width: 0;
-				height: 1px;
-				background-color: $color1;
-				position: absolute;
-				left: 0;
-				top: -.5em;
-				transition: all 250ms ease-in;
-			}
-			&:after {
-				content: " ";
-				display: inline-block;
-				width: 0;
-				height: 1px;
-				background-color: $color1;
-				position: absolute;
-				right: 0;
-				bottom: -.5em;
-				transition: all 250ms ease-in;
-			}
-			&:hover:before {
-				width: 100%;
-			}
-			&:hover:after {
-				width: 100%;
-			}
-		}
+		border: 1px solid $color1;
+		padding: 0 1.5em;
+		transition: all 250ms ease-in;
+		&:hover {
+			transform: scale(.95);
+		}	
 	}
 }

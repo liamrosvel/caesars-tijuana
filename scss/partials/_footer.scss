@@ -1,10 +1,10 @@
 .footer {
 	background-color: $color5;
-	padding: 3em 0 2em;
+	padding: 1.5em 0;
 	text-align: center;
 
 	@media screen and (min-width: 1024px) {
-		padding: 1em 0;
+		padding: .5em 0;
 	}
 
 	&__container {
@@ -14,24 +14,24 @@
 		@media screen and (min-width: 1024px) {
 			width: 87%;
 		}
+
+		@media screen and (min-width: 1200px) {
+            width: 1110px; 
+        }
 	}
 	&__title-social {
 		font-weight: $normal;
-		font-size: 1.2em;
+		font-size: 1.1em;
 		text-transform: uppercase;
 
 		@media screen and (min-width: 1024px) {
-			display: none;
+			font-size: 1em;
 		}
 	}
 	&__social-list {
 		list-style: none;
 		margin: 0;
 		padding: 0;
-
-		@media screen and (min-width: 1024px) {
-			display: none;
-		}
 	}
 	&__social-item {
 		display: inline-block;
@@ -44,9 +44,18 @@
 		&:hover {
 			fill: $color2;
 		}
+
+		@media screen and (min-width: 1024px) {
+			width: 2em;
+			height: 2em;
+		}
 	}
 	&__social-icon-style {
 		margin-right: 3em;
+
+		@media screen and (min-width: 1024px) {
+			margin-right: 1.5em;
+		}
 	}
 	&__copyright {
 		margin-top: 2em;
@@ -54,5 +63,9 @@
 		color: $color2;
 		line-height: 1.6;
 		font-size: .9em;
+
+		@media screen and (min-width: 1024px) {
+			margin-top: 1em;
+		}
 	}
 }

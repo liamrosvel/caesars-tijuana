@@ -10,9 +10,13 @@
 		@media screen and (min-width: 1024px) {
 			width: 87%;
 		}
+
+		@media screen and (min-width: 1200px) {
+            width: 1110px; 
+        }
 	}
 	&__info-container {
-
+		
 	}
 	&__info {
 		padding: 1em 0;
@@ -43,6 +47,12 @@
 	&__list-container {
 		display: flex;
 		justify-content: space-around;
+
+		@media screen and (min-width: 1200px) {
+			width: 45%;
+			margin: 0 auto;
+			text-align: left;
+		}
 	}
 	&__list-schedule {
 		list-style: none;
